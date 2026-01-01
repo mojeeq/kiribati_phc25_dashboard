@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EA QA Report - 80100100</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+            --success-color: #198754;
+            --warning-color: #ffc107;
+            --danger-color: #dc3545;
+            --info-color: #0dcaf0;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .main-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        
+        .header-section {
+            background: linear-gradient(135deg, var(--primary-color), #0a58ca);
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .quality-indicator {
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            color: white;
+            margin: 1rem 0;
+            display: inline-block;
+            min-width: 120px;
+        }
+        
+        .stat-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 15px;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            opacity: 0.8;
+        }
+        
+        .location-badge {
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            margin: 0.5rem;
+        }
+        
+        .table-modern {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .table-modern th {
+            background: linear-gradient(135deg, var(--primary-color), #0a58ca);
+            color: white;
+            font-weight: 600;
+            border: none;
+            padding: 1rem;
+        }
+        
+        .table-modern td {
+            padding: 0.75rem 1rem;
+            border: none;
+            border-bottom: 1px solid #f8f9fa;
+        }
+        
+        .table-modern tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="main-container">
+            <!-- Header Section -->
+            <div class="header-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h1 class="display-4 fw-bold mb-3">
+                                <i class="fas fa-map-marked-alt me-3"></i>Enumeration Area 80100100
+                            </h1>
+                            <div class="location-info">
+                                <span class="location-badge">
+                                    <i class="fas fa-island-tropical me-2"></i>8 - Maiana
+                                </span>
+                                <span class="location-badge">
+                                    <i class="fas fa-home me-2"></i>801 - Tebikerai
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-end">
+                            <div class="quality-indicator" style="background: var(--success-color);">
+                                <div class="stat-value">0%</div>
+                                <div class="stat-label">Error Rate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="container py-5">
+                
+                <!-- Key Statistics -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-3">
+                        <div class="card stat-card h-100 text-center p-4" style="background: linear-gradient(135deg, var(--info-color), #0aa2c0);">
+                            <div class="stat-value text-white">32</div>
+                            <div class="stat-label text-white">Total Interviews</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card h-100 text-center p-4" style="background: linear-gradient(135deg, var(--success-color), #146c43);">
+                            <div class="stat-value text-white">100</div>
+                            <div class="stat-label text-white">Total Population</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card h-100 text-center p-4" style="background: linear-gradient(135deg, #6f42c1, #563d7c);">
+                            <div class="stat-value text-white">4.35</div>
+                            <div class="stat-label text-white">Avg Household Size</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card h-100 text-center p-4" style="background: linear-gradient(135deg, var(--warning-color), #ffca2c);">
+                            <div class="stat-value text-dark">1</div>
+                            <div class="stat-label text-dark">Interviewers</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gender Demographics -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0"><i class="fas fa-venus-mars me-2"></i>Gender Distribution</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row text-center">
+                                    <div class="col-6">
+                                        <h3 class="text-primary">52</h3>
+                                        <p class="text-muted mb-0">Males (52%)</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3 class="text-danger">48</h3>
+                                        <p class="text-muted mb-0">Females (48%)</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <p class="text-center mb-0">
+                                    <strong>Gender Ratio:</strong> 1.08 males per female
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="mb-0"><i class="fas fa-chart-pie me-2"></i>Interview Status</h5>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-sm"><tr><td>ApprovedBySupervisor</td><td class="text-end"><strong>32</strong></td><td class="text-end text-muted">(100%)</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Interviewer Performance -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header bg-warning">
+                                <h5 class="mb-0 text-dark"><i class="fas fa-users me-2"></i>Interviewer Performance</h5>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table table-modern mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Interviewer</th>
+                                                <th class="text-center">Interviews</th>
+                                                <th class="text-center">Errors</th>
+                                                <th class="text-center">Error Rate</th>
+                                                <th class="text-center">Population</th>
+                                                <th class="text-center">Males</th>
+                                                <th class="text-center">Females</th>
+                                                <th class="text-center">Avg HH Size</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody><tr>
+                                                    <td><strong>MaiaT1_interv02</strong></td>
+                                                    <td class="text-center">32</td>
+                                                    <td class="text-center">0</td>
+                                                    <td class="text-center"><span class="badge bg-success">0%</span></td>
+                                                    <td class="text-center">100</td>
+                                                    <td class="text-center">52</td>
+                                                    <td class="text-center">48</td>
+                                                    <td class="text-center">4.35</td>
+                                                  </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer -->
+                <div class="text-center text-muted">
+                    <p class="mb-1">
+                        <i class="fas fa-clock me-2"></i>Report generated on January 02, 2026 at 10:37
+                    </p>
+                    <p class="mb-0">
+                        <i class="fas fa-chart-line me-2"></i>QA EA Analysis System
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
