@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>QA Reports - Kiribati Population and Housing Census | Kiribati National Statistics Office</title>
+    <title>QA Reports - Samoa Population and Housing Census | Samoa National Statistics Office</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* Official Kiribati Flag Colors */
-            --kiribati-red: #CE1126;         /* Philippine Red - Official flag red */
-            --kiribati-yellow: #FCD116;      /* Metallic Yellow - Official flag yellow */
-            --kiribati-blue: #003F87;        /* Midnight Blue - Official flag blue */
-            --kiribati-white: #FFFFFF;       /* Pure White - Official flag white */
+            /* Official Samoa Flag Colors */
+            --Samoa-red: #CE1126;         /* Philippine Red - Official flag red */
+            --Samoa-yellow: #FCD116;      /* Metallic Yellow - Official flag yellow */
+            --Samoa-blue: #003F87;        /* Midnight Blue - Official flag blue */
+            --Samoa-white: #FFFFFF;       /* Pure White - Official flag white */
             
             /* Government Website Complementary Colors */
             --gov-dark-blue: #1e3a5f;        /* Darker blue for text and headers */
@@ -35,15 +35,15 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: var(--text-primary);
-            background: var(--kiribati-white);
+            background: var(--Samoa-white);
         }
         
         /* Official Government Header */
         .government-header {
-            background: linear-gradient(135deg, var(--kiribati-blue) 0%, var(--gov-dark-blue) 100%);
-            color: var(--kiribati-white);
+            background: linear-gradient(135deg, var(--Samoa-blue) 0%, var(--gov-dark-blue) 100%);
+            color: var(--Samoa-white);
             padding: 1rem 0;
-            border-bottom: 4px solid var(--kiribati-yellow);
+            border-bottom: 4px solid var(--Samoa-yellow);
         }
         
         .gov-logo-section {
@@ -57,7 +57,7 @@
             width: auto;
             height: 80px;
             margin-right: 1.5rem;
-            background: var(--kiribati-white);
+            background: var(--Samoa-white);
             padding: 0.5rem;
             border-radius: 8px;
         }
@@ -97,15 +97,15 @@
         
         /* Main Container */
         .main-container {
-            background: var(--kiribati-white);
+            background: var(--Samoa-white);
             margin: 0;
             min-height: calc(100vh - 140px);
         }
         
         /* Dashboard Header */
         .dashboard-header {
-            background: linear-gradient(135deg, var(--kiribati-red) 0%, #a20e20 100%);
-            color: var(--kiribati-white);
+            background: linear-gradient(135deg, var(--Samoa-red) 0%, #a20e20 100%);
+            color: var(--Samoa-white);
             padding: 3rem 0;
             position: relative;
             overflow: hidden;
@@ -173,7 +173,7 @@
             font-weight: 700;
             display: block;
             margin-bottom: 0.5rem;
-            color: var(--kiribati-yellow);
+            color: var(--Samoa-yellow);
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
         
@@ -188,22 +188,22 @@
             background: var(--gov-gray);
             padding: 2rem;
             margin: 2rem 0 0 0;
-            border-left: 6px solid var(--kiribati-blue);
-            border-bottom: 2px solid var(--kiribati-yellow);
+            border-left: 6px solid var(--Samoa-blue);
+            border-bottom: 2px solid var(--Samoa-yellow);
         }
         
         .section-title {
             font-size: 1.6rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
-            color: var(--kiribati-blue);
+            color: var(--Samoa-blue);
             display: flex;
             align-items: center;
         }
         
         .section-title i {
             margin-right: 0.75rem;
-            color: var(--kiribati-red);
+            color: var(--Samoa-red);
         }
         
         .section-description {
@@ -236,27 +236,27 @@
         }
         
         .ea-report {
-            border-top: 4px solid var(--kiribati-blue);
+            border-top: 4px solid var(--Samoa-blue);
         }
         
         .ea-report:hover {
-            border-color: var(--kiribati-blue);
+            border-color: var(--Samoa-blue);
             box-shadow: 0 8px 25px rgba(0, 63, 135, 0.2);
         }
         
         .village-report {
-            border-top: 4px solid var(--kiribati-red);
+            border-top: 4px solid var(--Samoa-red);
         }
         
         .village-report:hover {
-            border-color: var(--kiribati-red);
+            border-color: var(--Samoa-red);
             box-shadow: 0 8px 25px rgba(206, 17, 38, 0.2);
         }
         
         .index-card {
-            background: linear-gradient(135deg, var(--gov-dark-blue) 0%, var(--kiribati-blue) 100%);
+            background: linear-gradient(135deg, var(--gov-dark-blue) 0%, var(--Samoa-blue) 100%);
             color: white;
-            border-top: 4px solid var(--kiribati-yellow);
+            border-top: 4px solid var(--Samoa-yellow);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -356,7 +356,7 @@
         }
         
         .btn-ea {
-            background: var(--kiribati-blue);
+            background: var(--Samoa-blue);
             color: white;
         }
         
@@ -368,7 +368,7 @@
         }
         
         .btn-village {
-            background: var(--kiribati-red);
+            background: var(--Samoa-red);
             color: white;
         }
         
@@ -381,7 +381,7 @@
         
         .btn-success {
             background: white;
-            color: var(--kiribati-blue);
+            color: var(--Samoa-blue);
             font-weight: 600;
             padding: 1rem 2rem;
             font-size: 1.05rem;
@@ -389,20 +389,20 @@
         }
         
         .btn-success:hover {
-            background: var(--kiribati-yellow);
+            background: var(--Samoa-yellow);
             color: var(--gov-dark-blue);
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(252, 209, 22, 0.4);
-            border-color: var(--kiribati-yellow);
+            border-color: var(--Samoa-yellow);
         }
         
         /* Footer */
         .footer-section {
-            background: linear-gradient(135deg, var(--gov-dark-blue) 0%, var(--kiribati-blue) 100%);
+            background: linear-gradient(135deg, var(--gov-dark-blue) 0%, var(--Samoa-blue) 100%);
             color: white;
             padding: 2rem 0;
             margin-top: 3rem;
-            border-top: 4px solid var(--kiribati-yellow);
+            border-top: 4px solid var(--Samoa-yellow);
         }
         
         .footer-content {
@@ -416,7 +416,7 @@
         
         .footer-content i {
             margin-right: 0.5rem;
-            color: var(--kiribati-yellow);
+            color: var(--Samoa-yellow);
         }
         
         /* Animations */
@@ -482,9 +482,9 @@
     <div class="government-header">
         <div class="container">
             <div class="gov-logo-section">
-                <img src="kiribati-logo-5.png" alt="Kiribati National Statistics Office" class="gov-logo">
+                <img src="kiribati-logo-5.png" alt="Samoa National Statistics Office" class="gov-logo">
                 <div class="gov-title">
-                    <h1>Kiribati National Statistics Office</h1>
+                    <h1>Samoa National Statistics Office</h1>
                     <p>Ministry of Finance and Economic Development</p>
                 </div>
             </div>
@@ -495,7 +495,7 @@
     <div class="generation-banner">
         <div class="container">
             <div class="generation-text">
-                Generated on January 02, 2026 at 10:37
+                Generated on January 02, 2026 at 11:04
             </div>
         </div>
     </div>
@@ -507,7 +507,7 @@
                 <div class="dashboard-content">
                     <h1 class="dashboard-title">
                         <i class="fas fa-chart-line me-3"></i>
-                        Kiribati Census 2025 Reports
+                        Samoa Census 2025 Reports
                     </h1>
                     <p class="dashboard-subtitle">
                         Field Operations Reports
@@ -793,11 +793,11 @@
                 <div class="footer-content">
                     <p>
                         <i class="fas fa-calendar-alt"></i>
-                        Republic of Kiribati Census 2025 | Quality Assurance Reports
+                        Republic of Samoa Census 2025 | Quality Assurance Reports
                     </p>
                     <p>
                         <i class="fas fa-map-marker-alt"></i>
-                        Kiribati National Statistics Office | Ministry of Finance and Economic Development
+                        Samoa National Statistics Office | Ministry of Finance and Economic Development
                     </p>
                     <p style="margin-bottom: 0; font-size: 0.8rem; opacity: 0.8;">
                         <i class="fas fa-phone"></i>
